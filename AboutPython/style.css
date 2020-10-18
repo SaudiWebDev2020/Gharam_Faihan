@@ -1,0 +1,112 @@
+.container{
+    background: linear-gradient(to bottom, #245076 0%, #306ca0 100%);
+}
+.container .header{
+    margin-left: 150px;
+    display: inline-block;
+}
+
+.container  p , a{
+color:rgb(169,155,25);
+font-family:  Arial;
+}
+
+.container .header .nav{
+    margin-left: 36px;
+    display: inline-block;
+    background-color: #437DAD;
+    height: 40px;
+    width: 990px;
+    box-shadow: 0 1px 5px black;    
+    border-radius: 5px;
+}
+.container .header #search-box{
+    padding: 29px 20px;
+    background: #444444;
+    font-size: 17px;
+    margin-left: 500px;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px black;    
+    position: absolute;
+}
+
+.nav a {
+    font-family:  Calibri;
+    color: white;
+    text-decoration: none;
+    padding-right:  80px;
+    font-size: 20px;
+}
+.container ul a {
+    color: white;
+    font-size: 18px;
+}
+
+.container ul {
+    margin-left: 160px;
+    margin-top: 30px;
+    display: inline-block;
+}
+.container ul li {
+    color:#C9B344 ;
+    font-size: 10px;
+}
+#content1{
+margin-left: 400px;
+display:inline-block;
+margin-top: -175px;
+vertical-align: text-top;
+text-align: center;
+width: 650px;
+}
+
+#content1  p{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 14px;
+color: white;
+}
+
+#content1  h1{
+    font-family: Calibri;
+    font-weight:normal;
+font-size: 23px;
+color: #F8FC00;
+
+}
+
+.maincontent {
+    text-align: center;
+    margin-left: 20px;
+}
+.box1 , .box2{
+    width: 350px;
+    padding-left: 30px;
+    border-top: 4px solid #75a8d3;
+    margin-top: 20px;
+    margin-left: 15px;
+    display:inline-block;
+    vertical-align: top;
+}
+.box1 h2 , .box2 h2 ,.box1 p , .box2 p{
+font-family: Calibri;
+font-weight:normal;
+}
+
+
+.maincontent ul{
+    list-style-type:square;
+    color: #94BBDE;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+::marker{
+    color: black;
+}
+
+footer{
+    padding-top: 40px;
+        background: linear-gradient(to bottom, #245076 0%, #306ca0 100%);
+        text-align: center;
+        font-family: Calibri;
+        color: #94BBDE;
+        font-size: 20px;
+}
