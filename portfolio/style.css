@@ -1,0 +1,105 @@
+
+.container{
+    background: linear-gradient(to top, #6c5761 0%, #57424b 100%);
+    width: 999px;
+    height: 1050px;
+    margin: 0px auto;
+} 
+
+header{
+    min-height: 60px;
+    background: linear-gradient(to bottom, #efe9ef 31%, #ffffff 100%);
+    font-family: Brush Script MT;
+    text-align: left;
+    padding-left: 30px;
+    font-size: 20px;
+
+}
+
+
+header p{
+    position: absolute;
+    top: 26px;
+    right: 233px;
+    font-family: Arial;
+    font-size: 20px;
+    
+}
+
+.about img{
+    margin: 30px;
+    border: 5px solid rgb(192,192,192);
+}
+.about h2 , .projects h3{
+    margin-top: 1px;
+    background: linear-gradient(to top, #8e8c98 0%, #dccedb 100%);
+    height: 40px;
+    font-family: Arial;
+    color: white;
+    padding-left: 10px;
+    padding-top: 10px;
+    text-shadow: 0 0 1px black;
+
+}
+
+
+#about  {
+    width: 470px;
+     height: 300px ;
+     background: linear-gradient(to right, #ffffff 0%, #dccedb 100%);
+    display:inline-block;
+     margin-left: 10px;
+     margin-top: 30px;
+     vertical-align: top;
+
+}
+#about p  ,#about a , .subcontents p {
+    color: black;
+    margin-left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.projects{
+  
+    display: inline-flex;
+    height: 316px;
+    width:525px ;
+}
+.subcontents img{
+    margin-bottom: 0px ;
+}
+
+.subcontents{
+    background: linear-gradient(to right, #ffffff 0%, #dccedb 100%);
+    display:inline-block;
+    margin-left: 30px;
+    height: 585px;
+    width: 352px;
+
+   }
+.techno img{
+    width: 43px;
+    height: 45px;
+    margin-left: 10px;
+}
+button{
+    background-color: rgb(64,125,97);
+    width: 80px;
+    height: 30px;
+    margin: 9px 95px;
+    border-radius: 10px;
+    color: white;
+}
+footer  {
+    background-color: white;
+    text-align: center;
+    font-family:  Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    
+}
+.footer img , .footer a {
+    width:20px ;
+    height:20px;
+    font-style: italic;
+    color: black;
+}
