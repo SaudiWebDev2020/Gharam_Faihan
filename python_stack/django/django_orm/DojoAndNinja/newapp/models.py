@@ -1,5 +1,6 @@
 from django.db import models
 
+
 # Create your models here.
 class dojo(models.Model):
     name = models.CharField(max_length=255)
@@ -7,7 +8,7 @@ class dojo(models.Model):
     state=models.CharField(max_length=255)
     desc=models.TextField()
     def __str__(self):
-        return f"<User object: Name: {self.name} City: {self.city} State: {self.state}  Description : {self.desc}  ({self.id})>\n"
+        return f"<dojo object: Name: {self.name} City: {self.city} State: {self.state}  Description : {self.desc}  ({self.id})>\n"
 class ninja(models.Model):
     first_name = models.CharField(max_length=255)
     last_name = models.CharField(max_length=255)
