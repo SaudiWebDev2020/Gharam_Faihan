@@ -19,7 +19,15 @@
             <p>Release Date : <input name="releasedate" type="date"></p>
             <p>Descrption: <input name="descrption" type="TextField"></p>
                 <button> Add </button></p>
+                {% if messages %}
+                <ul class="messages">    
+                    {% for message in messages %}    
+                        <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>    
+                    {% endfor %}
+                </ul>
+                {% endif %}
                 <p>   <a href="/" > Go Back </a> </p>
+
 
         </form>
     </div>
