@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Registration</title>
+    {% load static %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .container {
+            background-color: beige;
+        }
+
+        .login {
+            display: inline-block;
+            margin-left: 50%;
+            margin-top: -50%;
+            vertical-align: top;
+        }
+
+        h1 {
+            background-color: black;
+            color: white;
+            width: 450px;
+            border-radius: 5px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="registration" method="POST">
+            {% csrf_token %}
+            <h1> Registration </h1>
+            <div class="form-group" style="width: 290px;">
+                <label for="pwd">First Name:</label>
+                <input type="text" class="form-control" name="firstname">
+            </div>
+            <div class="form-group" style="width: 290px;">
+                <label for="text">Last Name :</label>
+                <input type="text" class="form-control" name="lastname">
+            </div>
+            <div class="form-group" style="width: 290px;">
+                <label for="email">Email address:</label>
+                <input type="email" class="form-control" name="email">
+            </div>
+            <div class="form-group" style="width: 290px;">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" name="password">
+            </div>
+            <div class="form-group" style="width: 290px;">
+                <label for="pwd"> confirm Password:</label>
+                <input type="password" class="form-control" name="confirm-pass">
+                <button type="submit" class="btn btn-default">Submit</button>
+            </div>
+            {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                <li {% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+
+        </form>
+    </div>
+
+    <div class="container">
+        <div class="login">
+            <form action="login" method="POST">
+                {% csrf_token %}
+                <h1> Login </h1>
+                <div class="form-group" style="width: 290px;">
+                    <label for="email">Email address:</label>
+                    <input type="email" class="form-control" name="login-email">
+                </div>
+                <div class="form-group" style="width: 290px;">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" name="login-paswd">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
