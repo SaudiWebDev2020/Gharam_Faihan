@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ninja To cat</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+
+    <style>
+        * {
+            background-color: wheat;
+        }
+        img{
+            display: block;
+            padding-bottom: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <img src="./ninja0.png" id="ninja0" alt="ninja0">
+    <img src="./ninja1.png" id="ninja1" alt="ninja1">
+    <img src="./ninja2.png" id="ninja2" alt="ninja2">
+    <img src="./ninja3.png" id="ninja3" alt="ninja3">
+    <img src="./ninja4.png" id="ninja4" alt="ninja4">
+</body>
+
+<script>
+    
+    
+    $(document).ready(function() {
+        $("#ninja0").click(function() {
+            $(this).attr("src","./cat0.png")
+        })
+        $("#ninja1").click(function() {
+            $(this).attr("src","./cat1.png")
+        })
+        $("#ninja2").click(function() {
+            $(this).attr("src","./cat2.png")
+        })
+        $("#ninja3").click(function() {
+            $(this).attr("src","./cat3.png")
+        })
+            $("#ninja4").click(function() {
+            $(this).attr("src","./cat4.png")
+        })
+
+    })
+</script>
+
+</html>

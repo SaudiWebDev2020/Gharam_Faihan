@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My jQuery Function</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#msg").click(function () {
+                $("#msgcontent").slideToggle("slow");
+            });
+        });
+
+        $(document).ready(function() {
+            $("#btn1").click(function() {
+                $("p:first").addClass("class1");
+            })
+        });
+
+        $(document).ready(function(){
+            $("#btn2").click(function(){
+                $("#img1").fadeToggle();
+                $("#img2").fadeToggle();
+                $("#img3").fadeToggle();
+            })
+        })
+    </script>
+
+    <style>
+        * {
+            background-color: plum;
+            text-align: center;
+        }
+
+        #msg,
+        #msgcontent {
+            padding: 5px;
+            text-align: center;
+            background-color: rosybrown;
+            border: dashed 1px violet;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+        }
+
+        #msgcontent {
+            padding: 20px;
+            display: none;
+        }
+
+        hr {
+            height: 2px;
+            border-width: 0;
+            background-color:  palevioletred ;
+        }
+
+        .class1{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+            color: purple;
+        }
+       
+
+        p{  
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div id="msg"> Hey.. click here for a massage</div>
+    <div id="msgcontent">Hava A Great Day!</div>
+    <hr>
+    <p> My Name is Gharam ..  </p>
+    
+    <button id="btn1">  Lets change the text !! </button>
+
+    <hr>
+    <img src="./img.png" id="img1" alt="img" width="80"  height="80">
+    <img src="./img.png" id="img2" alt="img" width="80"  height="80">
+    <img src="./img.png" id="img3" alt="img" width="80"  height="80">
+    <button id="btn2"  >  Click Here  </button>
+</body>
+
+</html>

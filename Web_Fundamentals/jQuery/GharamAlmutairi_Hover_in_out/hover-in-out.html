@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>the devil of hell's kitchen</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+    <script>
+        $(document).ready(function(){
+          $("img").hover(function(){
+            $(this).attr("src","./daredevil.jpg");
+          }, function(){
+    $(this).attr("src","./matt.jpg");
+  });
+        });
+        </script>
+    <style>
+        *{
+            background-color: black;
+            display: inline-block;
+        }
+        .imges{
+            margin-left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="imges" >
+    <img src="./matt.jpg" alt="matt" height="360" width="250">
+    <img src="./matt.jpg" alt="matt" height="360" width="250">
+    <img src="./matt.jpg" alt="matt" height="360" width="250">
+    <img src="./matt.jpg" alt="matt" height="360" width="250">
+    <img src="./matt.jpg" alt="matt" height="360" width="250">
+</div>
+</body>
+</html>

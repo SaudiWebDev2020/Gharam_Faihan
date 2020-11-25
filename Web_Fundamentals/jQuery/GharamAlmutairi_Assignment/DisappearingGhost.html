@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+
+    <title>Disappearing Ghost</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        * {
+            background-color: black;
+        }
+
+        div {
+            background-color: peru;
+            height: auto;
+            width: auto;
+        }
+
+        div img {
+            background-color: transparent;
+        }
+
+        h1 {
+            color: peru;
+            text-align: center;
+            font-family: monospace;
+            font-size: 20px;
+        }
+
+        button {
+            background-color: peru;
+            text-align: center;
+            margin: 0;
+            position: absolute;
+            display: block;
+            width: 200px;
+            font-family: monospace;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> jQuery - Assignment 1 </h1>
+<div>
+    <img src="./ghost.gif" alt="ghost" height="400" width="400">
+    <img src="./ghost.gif" alt="ghost" height="400" width="400">
+    <img src="./ghost.gif" alt="ghost" height="400" width="400">
+    <img src="./ghost.gif" alt="ghost" height="400" width="400">
+    <img src="./ghost.gif" alt="ghost" height="400" width="400">
+    <img src="./ghost.gif" alt="ghost" height="400" width="400">
+</div>
+    <button>Restore</button>
+
+
+    <script>
+      $('img').click(function(){
+          $(this).fadeOut();
+      })  
+      $('button').click(function(){
+      $('img').fadeIn();})
+</script>
+    </script>
+</body>
+
+</html>
